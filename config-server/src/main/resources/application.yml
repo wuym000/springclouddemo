@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wuym000/cloud-config-center.git
+          username: wuym000
+          password: 741258qq
+          search-paths: respo-config
+      label: master
+server:
+  port: 8091
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
