@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: clouddemo
+  cloud:
+    config:
+      profile: prod
+      label: master
+      uri: http://localhost:8091/
+server:
+  port: 8092
